@@ -7,7 +7,7 @@ stages:
 cache:
   key:
     files:
-      - composer.lock
+      - composer.json
   paths:
     - vendor/
 
