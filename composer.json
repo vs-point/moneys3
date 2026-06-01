@@ -1,5 +1,6 @@
 {
   "name": "vs-point/moneys3",
+  "version": "1.0.0",
   "type": "library",
   "description": "A strictly typed PHP library for communication with the Money S3 accounting software via its GraphQL API.",
   "keywords": ["money", "moneys3", "seyfor", "graphql", "api", "accounting", "ucetnictvi"],
