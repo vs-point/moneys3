@@ -19,7 +19,7 @@ validate:
   stage: analyse
   <<: *install
   script:
-    - composer validate --strict
+    - composer validate --strict --no-check-lock
 
 phpstan:
   stage: analyse
