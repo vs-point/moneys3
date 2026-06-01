@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
+         bootstrap="vendor/autoload.php"
+         colors="true"
+         failOnWarning="true"
+         failOnDeprecation="true"
+         stopOnFailure="false">
+    <testsuites>
+        <testsuite name="Unit">
+            <directory>tests/Unit</directory>
+        </testsuite>
+        <!-- Validates the library against the live Money S3 GraphQL schema (introspection).
+             Self-skips when the endpoint is unreachable. Run alone via the testsuite flag. -->
+        <testsuite name="Schema">
+            <directory>tests/Schema</directory>
+        </testsuite>
+    </testsuites>
+    <source>
+        <include>
+            <directory>src</directory>
+        </include>
+        <exclude>
+            <directory>src/Bridge</directory>
+        </exclude>
+    </source>
+</phpunit>
